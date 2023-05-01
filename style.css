@@ -1,0 +1,627 @@
+/*set base*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{ 
+    font-size: 15px;
+}
+
+h1{ 
+    font-size: 30px;
+    line-height: 1.2em ;
+}
+
+h2{ 
+    font-size: 25px;
+    line-height: 1.4em;
+}
+h3{ 
+    font-size: 20px;
+    line-height: 1.4em;
+}
+p{ 
+    font-size: 15px;
+    line-height: 1.4em;
+    margin-bottom: 1.2em;
+}
+/* the inner sets the width and centers the page */
+.inner {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%; 
+    height: auto; 
+    display: flex; 
+    align-items:center;
+    justify-content: center;   
+  }
+/*END -- set base*/
+
+
+
+/*   SECTION 1: HEADER */ 
+/* HEADER */
+header {
+    background: white;
+    padding: 4px;
+    
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 12vh;
+    min-width: 100%;
+    background: white;
+    color: black;
+  }
+  
+ 
+/*style logo*/ 
+header nav img{
+    height: 100px;
+    left: 10%;
+    padding-left: 50px;
+}
+
+/* header navigation styling */
+header nav ul{
+    text-align: right;
+    color: black;
+}
+
+header nav ul li {
+    display: inline ;
+    margin-left: 0.5em;
+    text-align: center;
+    color: black;
+}
+header nav ul li a {
+    text-decoration: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+header nav ul li a:hover {
+    color: #e791e3;
+    background: white;
+}
+
+/* HERO SECTION */
+.hero {
+    background: url(images/logo.png);
+    min-height: 100%;
+    background-size: cover;
+    justify-content: center; 
+    display: flex;    
+}
+
+.hero .hero-info {
+	width: 100%;
+	text-align: left;
+    padding-left: 20%;
+    padding-top: 100px;
+}
+
+.hero .hero-info .hero-info-heading {
+    font-size: 5rem;
+	font-weight: 500;
+    color: whitesmoke;
+}
+
+.hero .hero-info .hero-info-ethos {
+	font-size: 25px;
+	color: #f5f5dc; 
+    padding: .2rem;
+    padding-top: 10px;
+}
+
+.hero .hero-info .hero-info-button {
+  padding: 1.5rem 5rem; 
+  margin: 20px; 
+  text-decoration: none;
+    font-size: 1.6rem;
+	color: white;
+  display: inline-block; 
+	background-color: 	#ffc0cb;
+
+}
+
+.hero .hero-info .hero-info-button :hover {
+    color: #e791e3;
+    background: grey;
+}
+/* END OF HERO SECTION */
+@media screen and (max-width: 770px){
+    .banner-text h1{
+        font-size: 44px;
+    }
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+    }
+} */
+
+
+/*--Recent Event --
+using flexbox - place text and image on the same row */
+
+ .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+/*set image and padding*/ 
+.container .image img{
+  max-width: 100%;
+  max-height:100%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.text {
+  color: black;
+  max-width: fit-content;
+  padding: 10px;
+  text-align: center;
+}
+
+.text p {
+  padding: 10px;
+}
+
+.text a {
+    padding: 10px;
+    background-color: gray;
+    text-decoration: none;
+    color: white;
+}
+  /* END OF UPCOMING EVENTS SECTION */
+  
+
+ /* RESOURCE */ 
+ /* edit the boxed */
+.resource {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;  
+    column-gap:.5em;
+    row-gap:.2em;
+    margin: 2em;
+    border-radius: 5px;
+}
+
+.resource h3 a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.resource div {
+    background-color: #e2abc7;
+    min-height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.resourcetext h2 {
+    color: black; 
+    text-align: center;
+    padding-top: 10px;
+}
+
+.resourcetext p {
+    color: black; 
+    text-align: center;
+    padding: 10px;
+}
+/* INSERT IMAGE (set a background image on one of the boxes) */
+.resource .cm  {
+    height: 300px;
+    background-image: url(images/uh1.png);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    
+}
+.resource .cm2  {
+    background-image: url(images/event6.png);
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+/* position the text in the box */
+.resource h3 {
+    color: #fff;
+    text-align: center;
+    /* hide the text */
+    display: none;
+}
+.resource div:hover h3 {
+    /* make the text visible again on hovers */
+    display: block;
+}
+
+
+/*RECENT EVENTS */
+.recentcontent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;  
+    column-gap:.5em;
+    row-gap:.2em;
+    margin: 2em;
+    border-radius: 5px;
+}
+
+.recentcontent h3 a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.recentcontent div {
+    background-color: #e2abc7;
+    min-height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.recenttext  h3 {
+    color: black; 
+    text-align: center;
+}
+
+.recenttext  p {
+    color: black; 
+    text-align: center;
+}
+.recentcontent .event1  {
+    height: 300px;
+    background-image: url(images/Recent_Event.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    
+}
+.recentcontent .event2  {
+    background-image: url(images/benjaminhs.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.recentcontent .event3  {
+    background-image: url(images/manningclark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+/* position the text in the box */
+.recentcontent h3 {
+    color: #fff;
+    text-align: center;
+    /* hide the text */
+    display: none;
+}
+.recentcontent div:hover h3 {
+    /* make the text visible again on hovers */
+    display: block;
+}
+
+ /* event gallery */
+ .gallery {
+    background-color: white; 
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 2px; 
+    margin: 0;
+    padding: .2em; 
+  }
+  
+  /* setting image to fill entire box */ 
+  .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* style gallery using grid - each photo = item 
+    position each item individually */ 
+ /* image 1 - place in top left corner */
+  .gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+  
+ /* image 2 - place in top left corner */
+  .gallery__item--2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 9;
+  }
+  
+   /* image 3 - place in middle */
+  .gallery__item--3 {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 9;
+  }
+  
+   /* image 4 - place in middle */
+  .gallery__item--4 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+  
+  /* image 5 - full length on the right */
+  .gallery__item--5 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 9;
+  }
+  
+  /* MEDIA QUERIES  */
+@media screen and (max-width: 500px){
+    body{
+        background-color: #db9e9e;
+        font-size: 20px;
+    }
+}
+ /* END OF GET INVOLVED SECTION */
+
+
+ /*TEAM */
+.teamintro { 
+ text-align: center;
+ padding-top: 50px;
+}
+.team {
+    width: 100%;
+    height: auto;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.teamcontent {
+    width: 20%; 
+    height: auto; 
+    background: white;
+    margin: 20px; 
+    box-sizing: border-box ;
+    text-align: center;
+}
+
+.teamcontent img{
+    width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.teamcontent h4{
+    padding: 10px;
+}
+
+.teamcontent p {
+    text-align: center;
+    padding-inline: 20px;
+}
+
+
+/*PARTNERS*/
+.partners-content{
+    text-align: center;
+    padding-top: 50px;
+}
+.partnersimg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;  
+    column-gap:.5em;
+    row-gap:.2em;
+    margin: 2em 0;
+    border-radius: 5px;
+}
+/* edit the boxed */
+.partnersimg div {
+    background-color: white;
+    min-height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+/* INSERT IMAGE (set a background image on one of the boxes) */
+.partnersimg .uh {
+    background-image: url(./images/UniversityHouse.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.partnersimg .dia {
+    background-image: url(./images/DIA.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.partnersimg .icomos {
+    background-image: url(./images/AustraliaICOMOS.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.partnersimg .gml {
+    background-image: url(./images/GML.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.partnersimg .mill {
+    background-image: url(./images/Mill_logo.png);
+    background-repeat: no-repeat;
+    background-size:contain; 
+}
+
+.partnersimg .aia {
+    background-image: url(./images/AIA.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* position the text in the box */
+.partnersimg h3 {
+    color: #fff;
+    text-align: center;
+    /* hide the text */
+    display: none;
+}
+/* MEDIA QUERIES  */
+@media screen and (max-width: 500px){
+    body{
+        background-color: #db9e9e;
+        font-size: 20px;
+    }
+}
+
+-------------------------------------------------------------------------
+
+
+
+
+/*BUILDINGS*/ 
+.section{
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; 
+    width: 100%;
+    
+}
+
+.section img{
+    height: 250px;
+}
+
+.section h1 {
+    color: black;
+}
+
+.section p{
+    color: white; 
+    margin-right: 15px;
+}
+
+
+/*CANBERRA MODERN */
+.cmcontent{
+    text-align: center;
+    padding: .5em;
+}
+.cmbuildings{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    
+    background-color: white;
+    padding: 30px;
+    gap:10px;
+    }
+    
+    .building {
+    text-align:center;
+    border: 1px solid white;
+    background-color: whitesmoke;
+    }
+
+    .building img {
+        height: 80%; 
+        width: 80%; 
+        padding: .5em;
+        position:relative;
+    }
+ /* Mobile View */
+ @media screen and (min-width:250px) and (max-width:480px) {
+    .cmbuildings{
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+
+   /* Tablet View */
+   @media screen and (min-width:481px) and (max-width:768px) {
+    .cmbuildings{
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+
+
+
+.allevents {
+    width: 100%;
+    height: auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    background-color: pink;
+    padding: 30px;
+    gap:10px;
+    }
+    
+   .pastevents {
+    text-align:center;
+    border: 1px solid rgba(17, 17, 17,0.8);
+    padding: 18px;
+    font-size: 28px;
+    background-color: grey;
+    }
+
+    .pastevents img {
+        height: auto;
+        width: 700px;
+        padding: .5em;
+    }
+
+  
+
+/*--footer--*/
+
+#footer{
+    padding: 20px;
+    background:#1E182E;
+    position: relative;
+}
+
+
+.footer-right{
+    text-align: right;
+    padding-right: 80px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-img{
+   float: left;
+   height: 100px;
+   left: 10%;
+   padding-left: 50px;
+}
+
+
+@media screen and (max-width: 770px){
+    .footer-left,.footer-right{
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+    .footer-img{
+        top: 25%;
+    }
+}
+
+
+
+
+
+
